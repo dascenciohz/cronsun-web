@@ -2,13 +2,13 @@ FROM alpine:3.9.5
 
 LABEL build.maintainer="Daniel Ascencio <daniel.ascencio.hz@gmail.com>"
 LABEL build.date="24012020"
-LABEL build.version="0.3.1"
+LABEL build.version="0.3.5"
 
 ENV GOROOT /usr/lib/go
 ENV GOPATH /gopath
 ENV GOBIN /gopath/bin
 ENV PATH $PATH:$GOROOT/bin:$GOPATH/bin
-ENV CRONSUN_VERSION 0.3.1
+ENV CRONSUN_VERSION 0.3.5
 
 RUN set -x \
     && echo http://dl-cdn.alpinelinux.org/alpine/edge/community >> /etc/apk/repositories \
